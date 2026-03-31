@@ -1,1 +1,84 @@
 /* место для вашего кода */
+
+.header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 135px 1fr;
+    padding: 92px 50px 96px 50px;
+    border: 1px solid red;
+}
+
+.header__list {
+    display: flex;
+    gap: 28px;
+    list-style: circle;
+}
+
+.header__nav-item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    list-style: circle;
+    padding-left: 4px;
+    text-decoration: underline;
+}
+
+.header__nav-item_no-bullit {
+    list-style: none;
+    padding-left: 0;
+}
+
+.logo {
+    display: block;
+    width: 135px;
+    height: 105px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 240px;
+    height: 98px;
+}
+
+.header__links-list-item {
+    padding: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+
+.header__links-list-item_no-underline {
+    border-bottom: none;
+}
+
+.header__address {
+    justify-self: end;
+}
+
+.cover {
+    height: 757px;
+    padding: 50px;
+    background: url('../images/cover.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.cover__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 115%;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.aligned-text {
+    display: block;
+}

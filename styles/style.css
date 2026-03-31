@@ -82,3 +82,52 @@
 .aligned-text {
     display: block;
 }
+
+.aligned-text_left {
+    margin-top: 114px;
+}
+
+.aligned-text_center{
+    margin-top: 20px;
+    margin-left: 330px;
+}
+
+.aligned-text_right {
+    margin-top: 20px;
+    margin-left: 613px;
+}
+
+.description {
+    display: flex;
+    margin-top: 106px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cover__description-text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.bet-button {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    padding: 12px 32px 11px 31px;
+}
+
+.letter-spacing-extended {
+    word-spacing: 19px;
+}

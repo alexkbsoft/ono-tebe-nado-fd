@@ -99,7 +99,7 @@
     margin-top: 114px;
 }
 
-.aligned-text_center{
+.aligned-text_center {
     margin-top: 20px;
     margin-left: 330px;
 }
@@ -194,7 +194,7 @@
     justify-content: space-between;
 }
 
-.card_type_film{
+.card_type_film {
     background: url('../images/card-lot-01.jpg') no-repeat center;
     background-size: cover
 }
@@ -306,4 +306,53 @@
     line-height: 24px;
     /* or 120% */
     color: #000000;
+}
+
+.footer {
+    margin-top: 180px;
+    margin-bottom: 82px;
+    padding: 0 50px;
+    display: grid;
+    align-items: start;
+    grid-template-columns: 1fr 164px 1fr;
+}
+
+.footer__address {
+    max-width: 265px;
+    justify-self: start;
+}
+
+.header__links-address-list-item {
+    /* наб. Принсенграхт 263-265, Амстердам */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.footer__menu-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+}
+
+.footer__menu-link {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+}
+
+.footer__social-list {
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+    justify-self: end;
 }

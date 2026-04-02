@@ -17,15 +17,17 @@
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 21px;
     list-style: circle;
     padding-left: 4px;
-    text-decoration: underline;
 }
 
 .header__nav-item_no-bullit {
     list-style: none;
     padding-left: 0;
+}
+
+.header__active-link {
+    text-decoration: none;
 }
 
 .logo {
@@ -39,10 +41,9 @@
     flex-direction: column;
     align-items: flex-start;
     max-width: 240px;
-    height: 98px;
 }
 
-.header__links-list-item {
+.address-link {
     padding: 0;
     font-style: normal;
     font-weight: 400;
@@ -52,7 +53,7 @@
     border-bottom: 1px solid black;
 }
 
-.header__links-list-item_no-underline {
+.address-link_no-underline {
     border-bottom: none;
 }
 
@@ -62,7 +63,7 @@
 
 .cover {
     position: relative;
-    height: 757px;
+    min-height: 757px;
     padding: 50px;
     background: url('../images/cover.jpg') no-repeat center;
     background-size: cover;
@@ -70,8 +71,7 @@
 
 .overlay {
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
@@ -79,7 +79,7 @@
 }
 
 .cover__title {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;;
     font-style: normal;
     font-weight: 700;
     font-size: 100px;
@@ -119,7 +119,7 @@
 }
 
 .cover__description-text {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -129,7 +129,7 @@
 }
 
 .bet-button {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;;
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
@@ -149,14 +149,14 @@
 .lots {
     margin-top: 180px;
     margin-left: 24px;
-    margin-right: 24px;;
+    margin-right: 24px;
 }
 
 .lots__heading {
     margin-left: 40px;
     margin-bottom: 25px;
     /* title */
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -167,6 +167,7 @@
 
 .lots__card-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 25px;
     list-style: none;
     padding: 0;
@@ -174,7 +175,7 @@
 
 .lots__card-list-item {
     width: 334px;
-    min-height: 596px;;
+    min-height: 596px;
 }
 
 .card-link {
@@ -192,25 +193,25 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .card_type_film {
-    background: url('../images/card-lot-01.jpg') no-repeat center;
-    background-size: cover
+    background: url('../images/card-lot-01.jpg');
 }
 
 .card_type_book {
-    background: url('../images/card-lot-02.jpg') no-repeat center;
-    background-size: cover
+    background: url('../images/card-lot-02.jpg');
 }
 
 .card_type_picture {
-    background: url('../images/card-lot-03.jpg') no-repeat center;
-    background-size: cover
+    background: url('../images/card-lot-03.jpg');
 }
 
 .card__heading {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;;
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -224,7 +225,7 @@
 }
 
 .card__description {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -240,7 +241,7 @@
     margin-top: 30px;
     margin-left: 40px;
     /* посмотреть больше */
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -280,7 +281,7 @@
     /* Об аукционе */
     margin-top: 136px;
     margin-bottom: 100px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -297,7 +298,7 @@
 }
 
 .about__text {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -322,7 +323,7 @@
 
 .header__links-address-list-item {
     /* наб. Принсенграхт 263-265, Амстердам */
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -338,7 +339,7 @@
 }
 
 .footer__menu-link {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -347,10 +348,17 @@
     color: #000000;
 }
 
+.footer__menu-link_active {
+    text-decoration: none;
+}
+
 .footer__social-list {
     width: 240px;
     display: flex;
     justify-content: space-between;
     gap: 48px;
     justify-self: end;
+    margin: 0;
+    padding:0;
+    list-style: none;
 }
